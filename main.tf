@@ -1,3 +1,7 @@
+provider "aws" {
+  region = us-east-1
+}
+
 module "s3-nested_root" {
   source  = "app.terraform.io/billgrant/s3-nested/aws//modules/root"
   version = "1.0.0"
